@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainContent{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+   
+}
+.mainBox{
+    width: 60%;
+    height: 100vh;
+}
+.mainBox .matrix{
+    display: grid;
+    grid-template-columns: repeat(10,50px);
+    grid-template-rows: repeat(10,50px);
+    gap:7px;
+    justify-content: center;
+    position: relative;
+    top:6px;
+}
+.mainBox .boxItem{
+width: 50px;
+height: 50px;
+border: 1px solid black;
+background-color: #fff;
+border-radius: 3px;
+display: grid;
+justify-content: center;
+align-items: center;
+}
+
+/* Ladder */
+#ladder1{
+    position: absolute;
+    top:25rem;
+    left: 22rem;
+    z-index: 0;
+    width: 120px;   
+    height: 230px;
+    transform: rotate(235deg);
+}
+#ladder2{
+    position: absolute;
+    top:20rem;
+    left:36rem ;
+    width: 120px;
+    height: 280px;
+    transform: rotate(370deg);
+    z-index: 0; 
+}
+#ladder3{
+    position: absolute;
+    top:-2rem;
+    left:23.5rem ; 
+    width: 120px;
+    height: 36rem;
+    transform: rotate(140deg);
+    z-index: 0;
+}
+#ladder4{
+    position: absolute;
+    top:20rem;
+    left:9rem ;
+    width: 120px;
+    height: 220px;
+    transform: rotate(390deg);
+    z-index: 0; 
+}
+#ladder5{
+    position: absolute;
+    top:13rem;
+    left:7.3rem ;
+    width: 120px;
+    height: 200px;
+    transform: rotate(369deg);
+    z-index: 0; 
+}
+#ladder6{
+    position: absolute;
+    top:7rem;
+    left:33rem ;
+    width: 100px;
+    height: 230px;
+    transform: rotate(103deg);
+    z-index: 0; 
+}
+#ladder7{
+    position: absolute;
+    top:1.9rem;
+    left:10rem ;
+    width: 100px;
+    height: 230px;
+    transform: rotate(119deg);
+    z-index: 0; 
+}
+#ladder8{
+    position: absolute;
+    top:0.5rem;
+    left: 37.5rem;
+    z-index: 0;
+    width: 120px;   
+    height: 170px;
+    transform: rotate(167deg);
+}
+
+/* snake */
+#snake1{
+    position: absolute;
+    top:25rem;
+    left: 20rem;
+    width: 11rem;
+    transform: rotate(-80deg);
+    z-index: 1;
+    opacity: 0.8;
+}
+#snake2{
+    position: absolute;
+    top:15rem;
+    left: 29rem;
+    width: 4rem;
+    height: 9rem;
+    z-index: 1;
+    opacity: 0.8;
+}
+#snake3{
+    position: absolute;
+    top:8rem;
+    left: 13rem;
+    width: 24rem;
+    height: 21rem;
+    transform: rotate(12deg);
+    z-index: 1;
+    opacity: 0.8;
+}
+#snake4{
+    position: absolute;
+    top:11rem;
+    left: 10.6rem;
+    width: 4rem;
+    height: 13rem;
+    z-index: 1;
+    opacity: 0.8;
+}
+#snake5{
+    position: absolute;
+    top:7rem;
+    left: 5rem;
+    width: 20rem;
+    height: 13rem;
+    z-index: 1;
+    transform: rotate(38deg);
+    opacity: 0.8;
+}
+#snake6{
+    position: absolute;
+    top:1rem;
+    left: 32rem;
+    width: 10rem;
+    height: 9rem;
+    z-index: 1;
+    transform: rotate(30deg);
+    opacity: 0.8;
+}
+#snake7{
+    position: absolute;
+    top:1rem;
+    left: 25rem;
+    width: 3rem;
+    height: 9rem;
+    z-index: 1;
+    transform: rotate(20deg);
+    opacity: 0.8;
+}
+#snake8{
+    position: absolute;
+    top:0.5rem;
+    left: 13rem;
+    width: 3rem;
+    height: 8rem;
+    z-index: 1;
+    opacity: 0.8;
+    transform: rotate(-29deg);
+}
+
+
+.box100 i{
+    font-size: 20px;
+}
+
+
+
+/* Dice */
+#roller {
+    margin-top: 80px;
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 2px 3px 2px 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+   
+}
+
+#roll {
+    position: relative;
+    top: 30px;
+    width: 160px;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+#roll:hover{
+    transform: scale(1.4);
+    background-color: greenyellow;
+    color: #fff;
+}
+#roller #dd{
+    text-align: center;
+}
+#roller #dd i{
+    font-size: 27px;
+}

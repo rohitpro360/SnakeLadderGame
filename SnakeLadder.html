@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake & Ladder</title>
+    <link rel="stylesheet" href="./SnakeLadder.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="mainContent">
+        <div class="dice">
+            <div id="roller">
+                <p id="dd"></p>
+            </div>
+            <br>
+            <button id="roll">
+                <b>ROLL</b>
+            </button>
+            <audio src="../dice-142528.mp3" id="dicesound"></audio>
+            <!-- Enjoy -->
+             <audio src="../cute-level-up-3-189853.mp3" id="ladderup"></audio>
+             <!-- Snake Bite -->
+              <audio src="../080047_lose_funny_retro_video-game-80925.mp3" id="snakebite"></audio>
+
+              <!-- Destination reached -->
+               <audio src="../claps-29454.mp3" id = "destination"></audio>
+        </div>
+        <div class="mainBox">
+
+            <div class="matrix">
+                <div class="boxItem box100"><i class="fa-solid fa">100</i>
+                    
+                </div>
+                <div class="boxItem box99"><i class="fa-solid fa">99</i></div>
+                <div class="boxItem box98"><i class="fa-solid fa">98</i></div>
+                <div class="boxItem box97"><i class="fa-solid fa">97</i></div>
+                <div class="boxItem box96"><i class="fa-solid fa">96</i></div>
+                <div class="boxItem box95"><i class="fa-solid fa">95</i></div>
+                <div class="boxItem box94"><i class="fa-solid fa">94</i></div>
+                <div class="boxItem box93"><i class="fa-solid fa">93</i></div>
+                <div class="boxItem box92"><i class="fa-solid fa">92</i></div>
+                <div class="boxItem box91"><i class="fa-solid fa">91</i></div>
+                <div class="boxItem box81"><i class="fa-solid fa">81</i></div>
+                <div class="boxItem box82"><i class="fa-solid fa">82</i></div>
+                <div class="boxItem box83"><i class="fa-solid fa">83</i></div>
+                <div class="boxItem box84"><i class="fa-solid fa">84</i></div>
+                <div class="boxItem box85"><i class="fa-solid fa">85</i></div>
+                <div class="boxItem box86"><i class="fa-solid fa">86</i></div>
+                <div class="boxItem box87"><i class="fa-solid fa">87</i></div>
+                <div class="boxItem box88"><i class="fa-solid fa">88</i></div>
+                <div class="boxItem box89"><i class="fa-solid fa">89</i></div>
+                <div class="boxItem box90"><i class="fa-solid fa">90</i></div>
+                <div class="boxItem box80"><i class="fa-solid fa">80</i></div>
+                <div class="boxItem box79"><i class="fa-solid fa">79</i></div>
+                <div class="boxItem box78"><i class="fa-solid fa">78</i></div>
+                <div class="boxItem box77"><i class="fa-solid fa">77</i></div>
+                <div class="boxItem box76"><i class="fa-solid fa">76</i></div>
+                <div class="boxItem box75"><i class="fa-solid fa">75</i></div>
+                <div class="boxItem box74"><i class="fa-solid fa">74</i></div>
+                <div class="boxItem box73"><i class="fa-solid fa">73</i></div>
+                <div class="boxItem box72"><i class="fa-solid fa">72</i></div>
+                <div class="boxItem box71"><i class="fa-solid fa">71</i></div>
+                <div class="boxItem box61"><i class="fa-solid fa">61</i></div>
+                <div class="boxItem box62"><i class="fa-solid fa">62</i></div>
+                <div class="boxItem box63"><i class="fa-solid fa">63</i></div>
+                <div class="boxItem box64"><i class="fa-solid fa">64</i></div>
+                <div class="boxItem box65"><i class="fa-solid fa">65</i></div>
+                <div class="boxItem box66"><i class="fa-solid fa">66</i></div>
+                <div class="boxItem box67"><i class="fa-solid fa">67</i></div>
+                <div class="boxItem box68"><i class="fa-solid fa">68</i></div>
+                <div class="boxItem box69"><i class="fa-solid fa">69</i></div>
+                <div class="boxItem box70"><i class="fa-solid fa">70</i></div>
+                <div class="boxItem box60"><i class="fa-solid fa">60</i></div>
+                <div class="boxItem box59"><i class="fa-solid fa">59</i></div>
+                <div class="boxItem box58"><i class="fa-solid fa">58</i></div>
+                <div class="boxItem box57"><i class="fa-solid fa">57</i></div>
+                <div class="boxItem box56"><i class="fa-solid fa">56</i></div>
+                <div class="boxItem box55"><i class="fa-solid fa">55</i></div>
+                <div class="boxItem box54"><i class="fa-solid fa">54</i></div>
+                <div class="boxItem box53"><i class="fa-solid fa">53</i></div>
+                <div class="boxItem box52"><i class="fa-solid fa">52</i></div>
+                <div class="boxItem box51"><i class="fa-solid fa">51</i></div>
+                <div class="boxItem box41"><i class="fa-solid fa">41</i></div>
+                <div class="boxItem box42"><i class="fa-solid fa">42</i></div>
+                <div class="boxItem box43"><i class="fa-solid fa">43</i></div>
+                <div class="boxItem box44"><i class="fa-solid fa">44</i></div>
+                <div class="boxItem box45"><i class="fa-solid fa">45</i></div>
+                <div class="boxItem box46"><i class="fa-solid fa">46</i></div>
+                <div class="boxItem box47"><i class="fa-solid fa">47</i></div>
+                <div class="boxItem box48"><i class="fa-solid fa">48</i></div>
+                <div class="boxItem box49"><i class="fa-solid fa">49</i></div>
+                <div class="boxItem box50"><i class="fa-solid fa">50</i></div>
+                <div class="boxItem box40"><i class="fa-solid fa">40</i></div>
+                <div class="boxItem box39"><i class="fa-solid fa">39</i></div>
+                <div class="boxItem box38"><i class="fa-solid fa">38</i></div>
+                <div class="boxItem box37"><i class="fa-solid fa">37</i></div>
+                <div class="boxItem box36"><i class="fa-solid fa">36</i></div>
+                <div class="boxItem box35"><i class="fa-solid fa">35</i></div>
+                <div class="boxItem box34"><i class="fa-solid fa">34</i></div>
+                <div class="boxItem box33"><i class="fa-solid fa">33</i></div>
+                <div class="boxItem box32"><i class="fa-solid fa">32</i></div>
+                <div class="boxItem box31"><i class="fa-solid fa">31</i></div>
+                <div class="boxItem box21"><i class="fa-solid fa">21</i></div>
+                <div class="boxItem box22"><i class="fa-solid fa">22</i></div>
+                <div class="boxItem box23"><i class="fa-solid fa">23</i></div>
+                <div class="boxItem box24"><i class="fa-solid fa">24</i></div>
+                <div class="boxItem box25"><i class="fa-solid fa">25</i></div>
+                <div class="boxItem box26"><i class="fa-solid fa">26</i></div>
+                <div class="boxItem box27"><i class="fa-solid fa">27</i></div>
+                <div class="boxItem box28"><i class="fa-solid fa">28</i></div>
+                <div class="boxItem box29"><i class="fa-solid fa">29</i></div>
+                <div class="boxItem box30"><i class="fa-solid fa">30</i></div>
+                <div class="boxItem box20"><i class="fa-solid fa">20</i></div>
+                <div class="boxItem box19"><i class="fa-solid fa">19</i></div>
+                <div class="boxItem box18"><i class="fa-solid fa">18</i></div>
+                <div class="boxItem box17"><i class="fa-solid fa">17</i></div>
+                <div class="boxItem box16"><i class="fa-solid fa">16</i></div>
+                <div class="boxItem box15"><i class="fa-solid fa">15</i></div>
+                <div class="boxItem box14"><i class="fa-solid fa">14</i></div>
+                <div class="boxItem box13"><i class="fa-solid fa">13</i></div>
+                <div class="boxItem box12"><i class="fa-solid fa">12</i></div>
+                <div class="boxItem box11"><i class="fa-solid fa">11</i></div>
+                <div class="boxItem box1"><i class="fa-solid fa">1 
+                    <i class='fa-solid fa-chess-pawn' id='player1'
+                        style='color:red; position:relative;font-size:36px; bottom:4px;'></i>
+                </i></div>
+                <div class="boxItem box2"><i class="fa-solid fa">2</i></div>
+                <div class="boxItem box3"><i class="fa-solid fa">3</i></div>
+                <div class="boxItem box4"><i class="fa-solid fa">4</i></div>
+                <div class="boxItem box5"><i class="fa-solid fa">5</i></div>
+                <div class="boxItem box6"><i class="fa-solid fa">6</i></div>
+                <div class="boxItem box7"><i class="fa-solid fa">7</i></div>
+                <div class="boxItem box8"><i class="fa-solid fa">8</i></div>
+                <div class="boxItem box9"><i class="fa-solid fa">9</i></div>
+                <div class="boxItem box10"><i class="fa-solid fa">10</i></div>
+                <img src="../img/Ladder-removebg-preview.png" alt="" id="ladder1">
+                <img src="../img/Ladder-removebg-preview.png" alt="" id="ladder2">
+                <img src="../img/Ladder-removebg-preview.png" alt="" id="ladder3">
+                <img src="../img/Ladder-removebg-preview.png" alt="" id="ladder4">
+                <img src="../img/Ladder-removebg-preview.png" alt="" id="ladder5">
+                <img src="../img/Ladder-removebg-preview.png" alt="" id="ladder6">
+                <img src="../img/Ladder-removebg-preview.png" alt="" id="ladder7">
+                <img src="../img/Ladder-removebg-preview.png" alt="" id="ladder8">
+
+                <!-- snake -->
+                <img src="../snake1-removebg-preview.png" alt="" id="snake1">
+                <img src="../snake2-removebg-preview.png" alt="" id="snake2">
+                <img src="../snake5-removebg-preview.png" alt="" id="snake3">
+                <img src="../snake4-removebg-preview.png" alt="" id="snake4">
+                <img src="../snake5-removebg-preview.png" alt="" id="snake5">
+                <img src="../snake1-removebg-preview.png" alt="" id="snake6">
+                <img src="../snake6-removebg-preview.png" alt="" id="snake7">
+                <img src="../snake2-removebg-preview.png" alt="" id="snake8">
+            </div>
+
+        </div>
+    </div>
+    <script src="./SnakeLadder.js"></script>
+</body>
+
+</html>
